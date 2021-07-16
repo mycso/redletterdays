@@ -134,22 +134,19 @@ export default function RatingFeedback() {
                         ) : null}
 
                         {feedback.map(rate => (
-                            <>
-                                <div className="button-wrapper">
-                                    <button 
-                                    className={activeTab == `${rate.name}` ? 'active' : 'button-circle'} 
-                                    onClick={() => {
-                                        setActiveTab(rate.name), 
-                                        setShowMessage(false), 
-                                        setToggle(rate.image), 
-                                        setVisible(false)
-                                    }}
-                                    key={rate.id}
-                                    >
-                                        {rate.name}
-                                    </button>
-                                </div>
-                            </>
+                            <div className="button-wrapper" key={rate.id}>
+                                <button 
+                                className={activeTab == `${rate.name}` ? 'active' : 'button-circle'} 
+                                onClick={() => {
+                                    setActiveTab(rate.name), 
+                                    setShowMessage(false), 
+                                    setToggle(rate.image), 
+                                    setVisible(false)
+                                }}
+                                >
+                                    {rate.name}
+                                </button>
+                            </div>
                         ))}
                         <div>
                             <button className="button-action" onClick={handleClickSubmit}>Submit</button>

@@ -35,7 +35,8 @@ const GlobalStyles = createGlobalStyle`
   margin-top: 150px;
 
   @font-face {
-    font-family: 'sans-serif';
+    font-family: raleway, sans-serif;
+    font-style: normal;
 		format('woff2')
 		font-weight normal;
 		font-style: normal;
@@ -53,7 +54,13 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0 0 0 0;
     line-height: 2;
-    font-family: sans-serif;
+    font-family: droid-sans, sans-serif;
+    font-style: normal;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: raleway, sans-serif !important;
+    font-style: normal;
   }
 
   button {
