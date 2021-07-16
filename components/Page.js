@@ -20,7 +20,7 @@ const theme = {
   white: '#ffffff',
   maxWidth: '1200px',
   fontSize: '20px',
-  logoStaxWidth: '160px',
+  logoStaxWidth: '270px',
   carouselResponsiveWidth: '170%',
   carouselPosition: 'absolute',
   carouselLeft: '-36%',
